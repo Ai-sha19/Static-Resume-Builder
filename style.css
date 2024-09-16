@@ -1,0 +1,162 @@
+@font-face {
+  font-family: mont;
+  src: url(./Montserrat/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: montRegular;
+  src: url(./Montserrat/Montserrat-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(54, 54, 54);
+  background-color: #055275;
+}
+
+h1,
+h2 {
+  color: white;
+  font-family: mont;
+}
+
+.header {
+  background-color: #055275;
+
+  padding: 25px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 5px solid #ff8c00;
+}
+
+.personal-info,
+.header,
+.education,
+.skills,
+.work-experience {
+  margin-bottom: 20px;
+  color: rgb(73, 68, 68);
+  font-weight: lighter;
+}
+
+.personal-info,
+.header,
+.education,
+.skills,
+.work-experience ul li {
+  font-family: montRegular;
+}
+
+#profile {
+  gap: 25px;
+  display: flex;
+  align-items: center;
+}
+
+#personal-info {
+  width: 100%;
+}
+
+#personal-info p {
+  color: orange;
+}
+
+#personal-info span {
+  color: white;
+  line-height: 1.7;
+}
+
+#personal-info h1 {
+  font-family: mont;
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+li {
+  background: #eaeaea;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+button {
+  background-color: #ff8c00;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #055275;
+  transition: 0.5s ease;
+}
+
+
+@media (max-width: 745px) {
+  .resume-container {
+    padding: 10px;
+  }
+
+  #personal-info h1 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .profile-picture {
+    width: 100px;
+  }
+}
+
+@media (max-width: 680px) {}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  #profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 15px;
+  }
+}
